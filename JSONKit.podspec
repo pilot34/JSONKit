@@ -7,5 +7,5 @@ Pod::Spec.new do |s|
   s.author   = 'John Engelhart'
   s.source   = { :git => 'https://github.com/pilot34/JSONKit' }
   s.requires_arc = false
-  s.source_files   = 'JSONKit.*'
+  s.source_files = FileList.new('JSONKit.*').exclude('JSONKit.podspec')
 end
